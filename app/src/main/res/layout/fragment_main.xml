@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.azwraith.apps.des.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        grid:alignmentMode="alignBounds"
+        grid:columnCount="2">
+        <TextView android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="7dp"
+            android:id="@+id/news"
+            android:text="News"
+            android:textSize="18sp"
+            android:background="@drawable/news"
+            grid:layout_columnWeight="1"
+            android:textColor="#fff"
+            app:layout_columnSpan="2"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill_horizontal"/>
+
+        <TextView android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:text="Videos"
+            android:id="@+id/videos"
+            android:padding="7dp"
+            android:textColor="#fff"
+            android:background="@drawable/videos"
+            android:textSize="18sp"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill_horizontal"/>
+
+        <TextView android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Tournaments"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/tournaments"
+            android:padding="7dp"
+            android:textSize="18sp"
+            android:background="@drawable/tournaments"
+            android:textColor="#fff"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill_horizontal"/>
+
+        <TextView android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Events"
+            android:padding="7dp"
+            android:id="@+id/events"
+            android:background="@drawable/events"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginTop="3dp"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill_horizontal"/>
+        <TextView android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="7dp"
+            android:id="@+id/pet"
+            android:layout_marginLeft="3dp"
+            android:text="Pet of the Week"
+            android:background="@drawable/pet"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill_horizontal"/>
+
+    </android.support.v7.widget.GridLayout>
+</FrameLayout>
